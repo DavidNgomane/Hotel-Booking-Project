@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\..\\Task 1"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\ANGULAR FORMS"
+		},
+		{
+			"path": "..\\..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\marian-master"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\Downloads\\testAppFirebase-v9-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "angular-hotel-bookings-master"
+	}
+}

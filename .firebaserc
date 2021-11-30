@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "hotelproject-8c3aa": {
+      "hosting": {
+        "hotel-booking": [
+          "hotelproject-8c3aa"
+        ]
+      }
+    }
+  }
+}
