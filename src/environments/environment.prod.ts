@@ -1,12 +1,12 @@
 export const environment = {
   production: true,
   config : {
-    apiKey: "AIzaSyDetsyzzGtTdZQmd8j83cydezyntVKrju4",
-  authDomain: "hotelapp-69ac0.firebaseapp.com",
-  projectId: "hotelapp-69ac0",
-  storageBucket: "hotelapp-69ac0.appspot.com",
-  messagingSenderId: "1003007555947",
-  appId: "1:1003007555947:web:7c35fb4fd447818017b42e",
-  measurementId: "G-JVKDH0FWF1"
+    apiKey: "AIzaSyBMTcPg8BsOuJxhbJNGYhCynbrnK8f0SgE",
+    authDomain: "hotelbookingapplication-79fb3.firebaseapp.com",
+    projectId: "hotelbookingapplication-79fb3",
+    storageBucket: "hotelbookingapplication-79fb3.appspot.com",
+    messagingSenderId: "390539553923",
+    appId: "1:390539553923:web:4c129d72d657a34efaffb6",
+    measurementId: "G-RVK4BCE2ZG"
   }
 };

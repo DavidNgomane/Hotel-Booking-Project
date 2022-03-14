@@ -36,47 +36,46 @@
 </header>
 
 
+<div class="login-wrapper">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <h1 class="h3 mb-3 fw-normal">Please Register Here</h1>
 
-<div *ngFor="let booking of bookings" style="background-color: black; color: white; margin: 16px;">
-    <table>
-        <tr>
-            <td>
-                <p>Name: {{ booking.payload.doc.data().bookingName}}</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Surname: {{ booking.payload.doc.data().bookingSurname}}</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Phone: {{ booking.payload.doc.data().bookingPhone}}</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p> Check in Date: {{ booking.payload.doc.data().bookingCheckin}}</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Check out Date: {{ booking.payload.doc.data().bookingCheckout}}</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Email: {{ booking.payload.doc.data().bookingEmail}}</p>
-            </td>
-        </tr>
-        <div class="col-xl-2 col-lg-2">
-            <div class="header-btn">
-                <a [routerLink]="['/payment']" routerLinkActive="router-link-active" class="btn btn-primary">Confirm</a>
-            </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" name="name">
+                    <label for="floatingInput">Name</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="email" class="form-control" name="surname">
+                    <label for="floatingInput">Surname</label>
+                </div>
+            
+                <div class="form-floating">
+                  <input type="email" class="form-control" name="email">
+                  <label for="floatingInput">Email address</label>
+                </div>
+
+                <div class="form-floating">
+                  <input type="password" class="form-control" name="password" >
+                  <label for="floatingPassword">Password</label>
+                </div>
+
+                <button 
+                [routerLink]="['/login']" 
+                routerLinkActive="router-link-active" 
+                class="w-100 btn btn-lg btn-primary" 
+                type="submit">Register
+            </button>
+                
+              </form>
         </div>
-    </table>
-
+    </div>
 </div>
+
+
+
 
 <!-- Footer Start-->
 <div class="footer-area black-bg footer-padding">

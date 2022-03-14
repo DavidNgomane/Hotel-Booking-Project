@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { BookingComponent } from './booking/booking.component';
 import { PaymentComponent } from './payment/payment.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 import { FamilyRoomComponent } from './family-room/family-room.component';
 import { DeluxeRoomComponent } from './deluxe-room/deluxe-room.component';
 import { StandardRoomComponent } from './standard-room/standard-room.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'booking', component: BookingComponent},
   { path: 'payment', component: PaymentComponent},
   { path: 'login', component: LoginComponent},
+  { path: 'register', component:  RegisterComponent},
   { path: 'header', component: HeaderComponent},
   { path: 'footer', component: FooterComponent},
   { path: 'family-room', component: FamilyRoomComponent},
@@ -37,4 +39,4 @@ export const routingComponents = [HomeComponent, BookingComponent,
                                   FooterComponent, LoginComponent,
                                   FamilyRoomComponent, DeluxeRoomComponent,
                                   StandardRoomComponent, BookingInfoComponent,
-                                  UploadComponent]
+                                  UploadComponent, RegisterComponent]

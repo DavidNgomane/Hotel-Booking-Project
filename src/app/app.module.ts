@@ -24,6 +24,7 @@ import { AngularFireModule } from 'angularfire2';
 import { environment } from 'src/environments/environment';
 import { BookingInfoComponent } from './booking-info/booking-info.component';
 import { UploadComponent } from './upload/upload.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -32,6 +33,7 @@ import { UploadComponent } from './upload/upload.component';
   declarations: [
     AppComponent,
     routingComponents,
+    RegisterComponent,
     
     
     
