@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { BookingService } from '../booking.service';
 import { Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
+
 
 
 @Component({

@@ -5,8 +5,13 @@ import { AngularFirestore, AngularFirestoreModule } from 'angularfire2/firestore
   providedIn: 'root'
 })
 export class BookingService {
+  userData: any; // Save logged in user data
 
-  constructor(private angularfire: AngularFirestore) { }
+
+  constructor(
+    private angularfire: AngularFirestore
+    
+    ) { }
   createBooking(data: any){
     return new Promise<any>((resolve, reject)=>{
       this.angularfire.collection('booking').add(data).then((res)=>{}, (err)=> reject(err));

@@ -13,6 +13,7 @@ import { DeluxeRoomComponent } from './deluxe-room/deluxe-room.component';
 import { StandardRoomComponent } from './standard-room/standard-room.component';
 import { BookingInfoComponent } from './booking-info/booking-info.component';
 import { UploadComponent } from './upload/upload.component';
+import { Router } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},

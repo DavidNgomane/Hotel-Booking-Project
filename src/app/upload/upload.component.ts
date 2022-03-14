@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFireStorage } from 'angularfire2/storage';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { HttpClient } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-upload',
