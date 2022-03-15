@@ -39,17 +39,22 @@
 <div class="login-wrapper">
   <div class="card">
       <div class="card-body">
-          <form>
+          <form [formGroup]="loginForm">
               <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
           
               <div class="form-floating">
-                <input type="email" class="form-control" name="email">
+                <input type="email" class="form-control" formControlName="email">
+                <div *ngIf="email?.errors?.['required']">Email is required</div>
+                <div *ngIf="email?.errors?.['required']">Please enter a correct email format</div>
                 <label for="floatingInput">Email address</label>
               </div>
+
               <div class="form-floating">
-                <input type="password" class="form-control" name="password" >
+                <input type="password" class="form-control" formControlName="password" >
+                <div *ngIf="password?.errors?.['required']">Password is required</div>
                 <label for="floatingPassword">Password</label>
               </div>
+
               <button [routerLink]="['/booking']" routerLinkActive="router-link-active" class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
               <p class="h3 mb-3 fw-normal">Don't have an account yet? <a [routerLink]="['/register']" routerLinkActive="router-link-active">register here</a></p>
               

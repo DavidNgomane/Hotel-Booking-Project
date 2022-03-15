@@ -9,15 +9,19 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  password: any;
 
 loginForm = new FormGroup({
-  email: new FormControl(''),
-  password: new FormControl('')
+  email: new FormControl('', [Validators.required, Validators.email]),
+  password: new FormControl('', [Validators.required])
 })
 
   constructor(private router: Router) { }
 
   ngOnInit(){
+  }
+  get email(){
+    return this.loginForm.get('email');
   }
 
 }
